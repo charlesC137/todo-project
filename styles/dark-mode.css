@@ -1,0 +1,216 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 98vh;
+  width: 95vw;
+  margin: 0;
+  cursor: default;
+  background-color: hsl(235, 21%, 11%);
+}
+
+button{
+  cursor: pointer;
+}
+
+main{
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 40%;
+  /* margin-top: 100px; */
+  margin-top: 10%;
+}
+
+.mode-btn{
+  background-color: transparent;
+  border: none;
+}
+
+.background-image-div{
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 0;
+}
+
+.background-image-dark,
+.background-image-light,
+.sun-icon,
+.moon-icon{
+  display: none;
+}
+
+.bg-active,
+.icon-active{
+  display: block;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+}
+
+.todo-header{
+  font-weight: 700;
+  font-size: 26px;
+  color: hsl(0, 0%, 98%);
+}
+
+.input-section{
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.input-field{
+  border-radius: 8px;
+  border: none;
+  /* margin-left: -10px; */
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 70px;
+  font-size: 18px;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(0, 0%, 98%);
+}
+
+.save-btn{
+  background-color: transparent;
+  border: solid 1px hsl(0, 0%, 98%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: -50px;
+  z-index: 1000;
+  opacity: 0.4;
+  transition: opacity 0.4s;
+}
+
+.todo-section{
+  background-color: hsl(235, 24%, 19%);
+  padding: 10px 0px 0 0;
+  border-radius: 6px;
+}
+
+.todo{
+  display: grid;
+  grid-template-columns: 20px 1fr 30px;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+  align-items: center;
+  min-height: 50px;
+  column-gap: 20px;
+}
+
+.check-btn{
+  background-color: transparent;
+  border: solid 1px rgb(241, 234, 234);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  opacity: 0.4;
+  transition: opacity 0.4s;
+}
+
+.svg-check{
+  opacity:0;
+}
+
+.todo-text{
+  color: hsl(234, 39%, 85%);
+  font-size: 16px;
+}
+
+.delete-btn{
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-cross{
+  opacity:0;
+}
+
+.filter-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10px;
+  max-height: 20px;
+  align-items: center;
+  margin: 10px 0
+}
+
+.filters,
+.clear-completed{
+  background-color: transparent;
+  border: none;
+  color: hsl(234, 39%, 85%);
+  transition: color 0.5s, opacity 0.5s;
+  opacity: 0.7;
+}
+
+.filter-div p{
+  color: hsl(234, 39%, 85%);
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.filters:hover{
+  color: hsl(236, 33%, 92%);
+  opacity: 1;
+}
+
+.check-btn:hover{
+  opacity: 0.6;
+}
+
+.save-btn:hover{
+  opacity: 0.6;
+}
+
+.clear-completed:hover{
+  color: hsl(236, 33%, 92%);
+  opacity: 1;
+}
+
+.todo:hover{
+  .svg-cross{
+    opacity: 1;
+  }
+}
+
+.selected-filter:hover{
+  color:hsl(220, 100%, 67%);
+}
+
+/* js-code */
+
+.completed{
+  background-color: hsl(220, 98%, 61%);
+  opacity: 1;
+  border: none;
+
+  .svg-check{
+    opacity: 1;
+  }
+}
+
+.text-completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.selected-filter{
+  color: hsl(235, 37%, 49%);
+  opacity: 1;
+  transition: color 0.5;
+}

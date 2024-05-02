@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="./styles/dark-mode.css">
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <script type="module" src="./src/index.js"></script>
+  </head>
+  <body>
+
+    <div class="background-image-div">
+      <img class="background-image-dark bg-active" src="./images/bg-desktop-dark.jpg" alt="background">
+      <img class="background-image-light" src="./images/bg-desktop-light.jpg" alt="background">
+    </div>
+
+    <main>
+
+      <div class="header">
+       <div class="todo-header">T O D O</div>
+       <button class="mode-btn">
+        <img class="moon-icon icon-active" src="./images/icon-moon.svg" alt="moon">
+        <img class="sun-icon" src="./images/icon-sun.svg" alt="sun">
+       </button>
+      </div>
+
+      <div class="input-section">
+        <button class="save-btn">
+          <img class="svg-check" alt="check" src="./images/icon-check.svg">
+        </button>
+        <input class="input-field" type="text" placeholder="Input To-Do">
+      </div>
+
+      <div class="todo-section">
+        <div class="todo-list">
+          
+          <!-- <div class="todo">
+
+            <button class="check-btn check-btn-active">
+              <img alt="check" class="svg-check-active" src="./images/icon-check.svg">
+            </button>
+  
+            <div class="todo-text completed">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+  
+            <button class="delete-btn">
+              <img class="svg-cross" src="./images/icon-cross.svg" alt="cross">
+            </button>
+  
+          </div>
+  
+          <div class="todo">
+  
+            <button class="check-btn">
+              <img alt="check" class="svg-check" src="./images/icon-check.svg">
+            </button>
+  
+            <div class="todo-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+  
+            <button class="delete-btn">
+              <img class="svg-cross" src="./images/icon-cross.svg" alt="cross">
+            </button>
+            
+          </div>
+  
+          <div class="todo">
+  
+            <button class="check-btn">
+              <img alt="check" class="svg-check" src="./images/icon-check.svg">
+            </button>
+  
+            <div class="todo-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+  
+            <button class="delete-btn">
+              <img class="svg-cross" src="./images/icon-cross.svg" alt="cross">
+            </button>
+            
+          </div> -->
+
+        </div>
+
+        <div class="filter-div">
+          <p> <span id="todo-count"></span> left</p>
+
+          <button class="filters filter-all selected-filter">All</button>
+
+          <button class="filters filter-active">Active</button>
+
+          <button class="filters filter-completed">Completed</button>
+
+          <button class="clear-completed">Clear Completed</button>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
